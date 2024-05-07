@@ -1,0 +1,66 @@
+                                                          OPEN SYSTEMS INTERCONNECTION MODEL
+                                                          
+                         INTRODUCTION TO NETWORK DEVICES 1
+OSI model was developed as a way to help disparate computing systems communicate with each other.
+It is created in a layered approach to help secure networking environment.
+Security can be placed at various layers of the OSI Model to create a layered security arrangement that will vastly improve the security of an overall network.
+                                                         OSI REFERENCE MODEL
+                                                         7.Application
+                                                         6.Presentation
+                                                         5.Session
+                                                         4.Transport
+                                                         3.Network
+                                                         2.Data Link
+                                                         1.Physical                                                        
+                                                         
+                         BASIC NETWORK DEVICES
+Switch 
+It utilizes an application-specific intergrated circuit(ASIC) chip
+It is considered a layer 2 OSI device
+ASIC Chip has specific programming that allows the switch to learn when a device is on the network and which port it is connected to via device's layer 2 MAC Address.                         
+Managed switches allow for security to be placed on individual switch ports, creating more secure networking environment.
+SWitch will only communicate with local network devices.
+
+
+Wireless Access Point(WAP)
+It is a specific type of network bridge that connects wireless network segments with wired network segments.
+It is a layer 2 OSI Device.
+The common type of WAP Bridges are: 802.11 wireless network segment with 802.3 Ethernet network segment.
+All WAPs are capable of utilizing encryption to help ensure a secure networking environment.
+WAP will only communicate with Local network devices. 
+
+
+MultiLayer Switch(MLS)
+It provides normal Layer2 network switching services and Layer3 or higher OSI model services.
+It implements security at layer2 and higher of OSI model.
+Common MLS: Layer3 switch- it utilizes an ASIC chip for switching and the chip is also programmed to handle routing functions.
+It can communicate with non-local network devices and also pass data.   
+
+
+Router
+It is common for connecting different networks together utilizing OSI model's Layer3 logical network information.
+It uses software programming for decision making as compared to the switch's use for the ASIC chip.
+Firewalls and Access Control Lists(ACLs) are commonly placed on routers to help secure networks.
+ 
+ 
+Firewall
+It can be placed on routers or hosts(meaning software based) or can be its own device(network appliance).
+It functions at multilayers of the OSI model: Layer 2,3,4 and 7
+It blocks packets from entering or leaving the network.
+        Via Stateless inspection: firewall will examine every packet against a set of rules.if a packet matches a rule, the rule is enforced and a specified action is taken
+        Via Stateful Inspection: the firewall will examine the state of the connection between networks, specifically, when a connection is made from an internal network to an external network. The firewall will not examine any packets returning from an external connection.  
+
+
+Load Balancer 
+It is also called a content switch or content filter.
+It can be implemented to increase the security of the network by limiting or filtering the content that is allowed 
+It is a network appliance that is used to load balance between multiple hosts that contain the same data_ spreading out the workload for greater efficiency.
+it is commonly used to distribute the requests to a server farm among various servers helping to ensure that no single server gets overloaded.
+
+
+Proxy Server
+It is an appliance that requests resources on behalf of client machines.
+It is often used to retrieve resources from outside untrusted network on bealf of he requesting client.
+It hides and protects the requesting client.
+It can also be utilized to filter allowed content 
+It can increase network performance by caching commonly requested web pages.                               
